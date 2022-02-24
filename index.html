@@ -6,24 +6,277 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/carousel.css">
 </head>
 <body>
-  <header></header>
-  <section id="carousel" class=""></section>
-  <section id="noticias" class="" >
-    <h1 class="title-section color1"></h1>
-    <div class="row w-40">
-      <article></article>
-      <div class="column w-60">
-        <article></article>
-        <article></article>
-        <article></article>
+  <header id="header" >
+    <div class="menu d-flex">
+      <img class="btn-menu" src="assets/menu.png" alt="" onclick="openMenu()">
+      <p class="color-1" >MENU</p>
+    </div>
+    <div class="logo">
+      <img class="img" src="assets/logo.png" alt="">
+    </div>
+    <div class="aovivo">
+      <div class="icon-1">
+        <img class="img" src="assets/icon-cd.png" alt="">
+      </div>
+      <div class="tocando">
+        <p>NO AR</p>
+        <b class="color-1 font-2">BALADA TOP</b>
+      </div>
+      <div class="icon-2">
+        <img class="img" src="assets/icon-volume.png" alt="">
+      </div>
+    </div>
+  </header>
+  <div id="menu" class="menu-open d-none">
+    <ul class="opcoes">
+      <li class="item-menu" ><a href="">Inicio</a></li>
+      <li class="item-menu" ><a href="">Inicio</a></li>
+      <li class="item-menu" ><a href="">Inicio</a></li>
+    </ul>
+  </div>
+  <!-- Slideshow container -->
+  <section id="carousel" class="carousel">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="assets/banner-1.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="assets/banner-2.png" style="width:100%">
+      </div>
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="fix">
+      <div class="singles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
     </div>
   </section>
-  <section id="destaques" class=""></section>
-  <section id="promocoes" class=""></section>
-  <section id="social" class=""></section>
-  <footer></footer>
+  <section id="noticias" class="section bg-color-1" >
+    <h1 class="title-section color-1">NOTICIAS</h1>
+    <div class="d-flex directions">
+      <article class="post-destaque" >
+        <a href="#">
+        <img class="post-thumb" src="./assets/thumb-sup.png" alt="">
+        <div class="post-info">
+          <div id="categories-post"  class="d-flex">
+            <span class="novidade">novidades</span>
+          </div>
+          <h1 class="title-post font-1">
+            Sofia Reyes e Becky G se inspiram 
+            em Selena Quintanilla em 'Mal de Amores'
+          </h1>
+          <p class="content-post ">
+            Quando estamos de coração partido, 
+            há apenas um combo que pode ajudar nesse momento: música álcool 
+            e amigos.
+          </p>
+        </div>
+      </a>
+      </article>
+      <div class="column">
+        <article class="post" >
+          <a href="#">
+          <img class="post-thumb" src="./assets/thumb-info.png" alt="">
+          <div class="post-info">
+            <div id="categories-post"  class="d-flex ">
+              <span class="novidade">novidades</span>
+              <span class="premiacoes">premiações</span>
+            </div>
+            <h1 class="title-post font-2">
+              Anitta é a primeira brasileira a se apresentar no VMAs
+            </h1>
+            <p class="content-post">
+              Anitta acaba de conquistar mais um marco importantíssimo 
+              e historico na carreira e na musica brasileira...
+            </p>
+          </div>
+        </a>
+        </article>
+        <article class="post d-flex" >
+          <a href="#">
+          <img class="post-thumb" src="./assets/thumb-info.png" alt="">
+          <div class="post-info">
+            <div id="categories-post"  class="d-flex">
+              <span class="premiacoes">premiações</span>
+              <span class="musica">musica</span>
+            </div>
+            <h1 class="title-post font-2">
+              Anitta é a primeira brasileira a se apresentar no VMAs
+            </h1>
+            <p class="content-post color-3">
+              Anitta acaba de conquistar mais um marco importantíssimo 
+              e historico na carreira e na musica brasileira...
+            </p>
+          </div>
+          </a>
+        </article>
+        <article class="post d-flex" >
+          <a href="#">
+          <img class="post-thumb" src="./assets/thumb-info.png" alt="">
+          <div class="post-info">
+            <div id="categories-post"  class="d-flex">
+              <span class="novidade">novidades</span>
+              <span class="lancamentos">lançamentos</span>
+            </div>
+            <h1 class="title-post font-2">
+              Anitta é a primeira brasileira a se apresentar no VMAs
+            </h1>
+            <p class="content-post color-3">
+              Anitta acaba de conquistar mais um marco importantíssimo 
+              e historico na carreira e na musica brasileira...
+            </p>
+          </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="destaques" class="section bg-section">
+    <h1 class="title-section color-2">TOP 10</h1>
+    <div class="d-flex directions">
+      <div class="w-45">
+        <a href="">
+          <div class="rank">
+            <p>#1</p>
+          </div>
+          <img class="img" src="assets/top-1.png" alt="">
+        </a>
+      </div>
+        <div class="w-55">
+            <a class="top-1" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-1" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-1" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+            <a class="top-2" href="#">
+              <div class="rank">
+                <p>#1</p>
+              </div>
+              <img class="img" src="assets/top-1.png" alt="">
+            </a>
+      </div>
+    </div>
+    <div class="content-destaques column">
+      <p class="font-2 color-2" >Quer ver sua música preferida aqui?</p>
+      <p class="font-2 color-2">use a <b> #top10dalike</b></p>
+    </div>
+  </section>
+  <section id="promocoes" class="section bg-color">
+    <h1 class="title-section color-2">PROMOÇOES</h1>
+    <div class="d-flex directions">
+      <div class="w-50">
+        <a href="#">
+          <img class="img" src="./assets/promocoes.png" alt="">
+        </a>
+      </div>
+      <div class="w-50">
+        <a href="#">
+          <img class="img" src="./assets/promocoes.png" alt="">
+        </a>
+      </div>
+  
+    </div>
+    </section>
+    <section id="social" class="section bg-color-1">
+      <h1 class="title-section color-1">SEGUE A @RADIOLIKEBR</h1>
+      <div class="d-flex directions">
+        <div class="grup-card">
+          <a class="w-25" href="#">
+            <img class="img" src="./assets/public-1.png" alt="">
+          </a>
+          <a class="w-25" href="#">
+            <img class="img" src="./assets/public-2.png" alt="">
+          </a>
+        </div>
+        <div class="grup-card">
+          <a class="w-25" href="#">
+            <img class="img" src="./assets/public-1.png" alt="">
+          </a>
+          <a class="w-25" href="#">
+            <img class="img" src="./assets/public-2.png" alt="">
+          </a>
+        </div> 
+      </div>
+    </section>
+    
+  <footer>
+    
+    <div class="info-footer">
+      <div class="d-flex">
+        <a class="redes-icon" href="#">
+          <img class="img" src="assets/icon-face.png" alt="">
+        </a>
+        <a class="redes-icon" href="#">
+          <img class="img" src="assets/icon-insta.png" alt="">
+        </a>
+        <a class="redes-icon" href="#">
+          <img class="img" src="assets/icon-twitter.png" alt="">
+        </a>
+      </div>
+      <div class="logo-footer">
+        <img class="img" src="assets/logo-footer.png" alt="">
+      </div>
+      <div class="contato">
+        <p class="font- color-2" >(49) 9 9929-9100</p>
+        <p class=" color-2" >contato@radiolike.com.br</p>
+        <p class=" color-2" >Av. Governador Valadares, 435</p>
+      </div>
+    </div>
+    <div class="back-top">
+      <a class="btn-back"  href="#header">
+        <img class="img" src="assets/back-top.png" alt="">
+      </a>
+    </div>
+  </footer>
+  <Script src="js/functions.js" ></Script>
 </body>
 </html>
